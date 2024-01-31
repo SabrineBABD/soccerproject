@@ -1,0 +1,84 @@
+<app-banner [title]="'Table Match'"></app-banner>
+
+
+  
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="widget-next-match">
+                <table class="table custom-table">
+                  <thead>
+                    <tr>
+                      <th>P</th>
+                      <th>Team One</th>
+                      <th>Team Two</th>
+                      <th>Score One</th>
+                      <th>Score Two</th>
+                      <th>Delete</th>
+                      <th>Edit</th>
+                      <th>Detail</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let m of matches" appColor>
+                      <td>{{m.id}}</td>
+                      <td>{{m.teamOne}}</td>
+                      <td>{{m.teamTwo}}</td>
+                      <td>{{m.scoreOne}}</td>
+                      <td>{{m.scoreTwo}}</td>
+                      <td>
+                        <button class="btn btn-danger" class="btn btn-primary" (click)="reserveId(m)" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                          <i class="icon-trash-o"></i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-primary" (click)="navigateTo(m._id , '/add-match/')">
+                          <i class="icon-edit"></i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-info" (click)="navigateTo(m._id , '/match-detail/')">
+                          <i class="icon-eye"></i>
+                        </button>
+                      </td>
+                      
+                    </tr>
+                
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                           {{obj.teamOne}} VS  {{obj.teamOne}} 
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="deleteMatch()" >Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </tbody>
+                </table>
+              </div>
+        </div>
+      
+
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+
+

@@ -1,0 +1,46 @@
+<app-banner [title]="'Table Teams'"></app-banner>
+
+
+  
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="widget-next-match">
+                <table class="table custom-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Des</th>
+                      <th>Delete</th>
+                      <th>Edit</th>
+                      <th> Detail</th>
+                   
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let t of teams" appColor>
+                    
+                      <td>{{t.name}}</td>
+                      <td>{{t.description}}</td>
+                      <td><button class="btn btn-danger" (click)="DeleteTeam()">Delete</button></td>
+                      <td><button class="btn btn-info">Edit</button></td>
+                      <td><button class="btn btn-success" [routerLink]="['/team-detail/',t._id]">Detail</button></td>
+                   
+                      
+                    
+                    
+                     
+                    </tr>
+                
+                
+                  </tbody>
+                </table>
+              </div>
+        </div>
+      
+
+        
+      </div>
+    </div>
+  </div>

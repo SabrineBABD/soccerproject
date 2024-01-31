@@ -1,0 +1,45 @@
+<app-banner [title]="'Table Player'"></app-banner>
+
+
+  
+  <div class="site-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="widget-next-match">
+                <table class="table custom-table">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Name</th>
+                      <th>Number</th>
+                      <th>Post</th>
+                      <th>Team Name</th>
+                   
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let p of players" appColor>
+                      <td>
+                        <img [src]="p.image" width="50px">
+                      </td>
+                      <td>{{p.name}}</td>
+                      <td>{{p.number}}</td>
+                      <td>{{p.post}}</td>
+                      <td>{{p.teamId.name}}</td>
+                    
+                    
+                     
+                    </tr>
+                
+                
+                  </tbody>
+                </table>
+              </div>
+        </div>
+      
+
+        
+      </div>
+    </div>
+  </div>

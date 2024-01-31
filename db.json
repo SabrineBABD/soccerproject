@@ -1,0 +1,84 @@
+{
+  "matches": [
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 3
+    },
+    {
+      "teamOne": "css",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 4
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 5
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 6
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 7
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 8
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 9
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 10
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 11
+    },
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 12
+    }
+  ],
+  "players": [
+    {
+      "teamOne": "EST",
+      "teamTwo": "CA",
+      "scoreOne": "5",
+      "scoreTwo": "0",
+      "id": 3
+    }
+    
+  ]
+}
